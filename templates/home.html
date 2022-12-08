@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<nav>
+  <div class="menu">
+    <div class="logo">
+      <a href="#">MessageMate</a>
+    </div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
+      <li><a href="{% url 'animation' %}"> Convertor</a></li>
+      <li><a href="{% url 'signup' %}">Singup</a></li>
+      <li><a href="{% url 'signup' %}">Login</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="img"></div>
+<div class="center">
+  <div class="title">Text To Sign Language</div>
+  
+  <div class="btns">
+    <button ><a href="{% url 'animation' %}">Get Started</button>
+  </div>
+</div>
+  
+{% endblock %}
